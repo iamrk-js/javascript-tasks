@@ -49,6 +49,33 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task12_app.js"></script>
+	<script>
+		let cl = console.log;
+
+
+let d = a =>{
+	let b = 60 * a;
+	let c = " sec";
+	cl(b + c)
+}
+d(25);
+
+// convert hour to min
+let hour = a =>{
+	let b = 60 * a;
+	let c = " min";
+	cl(b + c)
+}
+hour(1)
+
+//convert sec to min 
+
+let second = a =>{
+	let b = a / 60;
+	let c = " min";
+	cl(b + c)
+}
+second(120)
+	</script>
 </body>
 </html>

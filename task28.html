@@ -25,6 +25,22 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task28_app.js"></script>
+	<script>
+		let cl = console.log;
+
+let array1 =["Ram","Shyam","Suraj","Jitendra"];
+// cl(array);
+[array1[0] ,array1[array1.length - 1]] = [array1[array1.length - 1],array1[0]];
+cl(array1);
+function arraypositionchange(array){
+	let a =	array.pop();
+	let b = array.shift();
+	let k = array;
+		cl(` ${a}, ${k}, ${b}`);
+}
+arraypositionchange(array1);
+arraypositionchange(s);
+
+	</script>
 </body>
 </html>

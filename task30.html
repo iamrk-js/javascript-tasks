@@ -24,6 +24,50 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task30.app.js"></script>
+	<script>
+
+let cl = console.log;
+ 
+ 
+ let d = "boTtlE";
+
+ let alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+
+// function add(a,b){
+// for(let i = 0 ; i<a.length; i++){
+	// var k = a[i]
+// };
+// for(let c = 0 ; k < b.length ; b++){
+	// var e = b[i];
+	
+// }
+// if(k = e){
+	// kpush.push();
+// }else{
+	// lpush.push();
+// }
+// }
+// add(d,alphabet)
+function sort(a){
+
+ let s = a.split('');
+ cl(s);
+  let  kpush =[];
+ let lpush =[];
+
+ for(let i = 0 ; i<s.length; i++){
+	if(s[i] === s[i].toUpperCase()){
+	kpush.push(s[i]);
+		
+	}
+	if(s[i] === s[i].toLowerCase()){
+	lpush.push(s[i])
+		
+	}
+	let joinkl = kpush.concat(lpush);
+	cl(joinkl.join(''));
+ }
+}
+	</script>
 </body>
 </html>
