@@ -24,6 +24,30 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task30.app.js"></script>
+	<script>
+		let cl = console.log
+	
+	
+	let capitalletterfront = string =>{
+	
+		let str = string.split('');
+		let capital=[];
+		let small =[];
+		
+		str.forEach(alphabets =>{
+			if(alphabets == alphabets.toUpperCase()){
+				capital.push(alphabets);
+			}
+			if(alphabets == alphabets.toLowerCase()){
+				small.push(alphabets);
+			}
+			
+		})
+		
+		return capital.join('').concat(small.join(''));
+	}
+	cl(capitalletterfront("chArEcTeR"));
+	cl(capitalletterfront("JaVaScrIpT"));
+	</script>
 </body>
 </html>

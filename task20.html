@@ -23,5 +23,29 @@
 			</div>
 		</div>
 	</div>
+	<script>
+		let cl =console.log;
+	
+	let person ={
+		fname:'rajiv',
+		lname:'patil',
+		age:33,
+		country:'india',
+		fullname:function(){
+			return this.fname +" "+ this.lname
+		},
+			child:{
+				fname:'priya',
+				lname:'patil',
+				age:10,
+				country:'india',
+				fullname:function(){
+					return this.fname +" "+ this.lname
+			}
+		}
+	}
+	cl(person.fullname());
+	cl(person.child.fullname());
+	</script>
 </body>
 </html>

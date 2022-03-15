@@ -34,6 +34,19 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task8_app.js"></script>
+	<script >
+		let cl = console.log;
+	   
+	   const string1 = 'i love javascript';
+	   
+	  const arr = string1.split(" ");
+	  
+	  for (i=0; i < arr.length;i++){
+		  arr[i]= arr[i].charAt(0).toUpperCase()+arr[i].slice(1);
+	  }
+	  
+	   const string2 =arr.join(' ');
+	   cl(string2);
+	</script>
 </body>
 </html>
