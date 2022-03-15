@@ -1,29 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-	<title>JS Task 23</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="css/style.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap" rel="stylesheet">
-</head>
-<body>
-	<div class="container" id="task23">
-		<div class="row">
-			<div class="col-sm-12">
-				<a href='index.html' class="my-2 d-inline-block"><i class='fa fa-arrow-left mr-2'></i>Task List</a>
-				<div class="card p-3 mb-4">
-					<h4>Task 23 - Check number or its sum</h4>	
-					<ul class="mb-0">
-						<li>Write function which accept two parameters</li>
-						<li>Function will check two numbers. It will return true if any of the provided number is 35 or sum of those two numbers is 35</li>
-						<li>Print true or false in console</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="js/task23_app.js"></script>
-</body>
+  <head>
+    <title>JS Task 23</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container" id="task23">
+      <div class="row">
+        <div class="col-sm-12">
+          <a href="index.html" class="my-2 d-inline-block"
+            ><i class="fa fa-arrow-left mr-2"></i>Task List</a
+          >
+          <div class="card p-3 mb-4">
+            <h4>Task 23 - Check number or its sum</h4>
+            <ul class="mb-0">
+              <li>Write function which accept two parameters</li>
+              <li>
+                Function will check two numbers. It will return true if any of
+                the provided number is 35 or sum of those two numbers is 35
+              </li>
+              <li>Print true or false in console</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var cl = console.log;
+
+      // Check number or its sum
+      function sum35(x, y) {
+        return x == 35 || y == 35 || x + y == 35;
+      }
+      console.log(sum35(35, 35));
+      console.log(sum35(15, 35));
+      console.log(sum35(15, 15));
+      console.log(sum35(15, 20));
+    </script>
+  </body>
 </html>

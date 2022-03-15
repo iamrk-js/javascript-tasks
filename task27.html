@@ -1,29 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-	<title>JS Task 27</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="css/style.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap" rel="stylesheet">
-</head>
-<body>
-	<div class="container" id="task27">
-		<div class="row">
-			<div class="col-sm-12">
-				<a href='index.html' class="my-2 d-inline-block"><i class='fa fa-arrow-left mr-2'></i>Task List</a>
-				<div class="card p-3 mb-4">
-					<h4>Task 27 - Iterate array items with for loop</h4>	
-					<ul class="mb-0">
-						<li>states = ['Aasam', 'Bihar', 'Maharashtra', 'Gujrat', 'Andra Pradesh'];</li>
-						<li>Use for loop to iterate those state names and print in console</li>
-						<li>It should print in console "Aasam is indian state", "Bihar is indian state" and so on</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="js/task27_app.js"></script>
-</body>
+  <head>
+    <title>JS Task 27</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container" id="task27">
+      <div class="row">
+        <div class="col-sm-12">
+          <a href="index.html" class="my-2 d-inline-block"
+            ><i class="fa fa-arrow-left mr-2"></i>Task List</a
+          >
+          <div class="card p-3 mb-4">
+            <h4>Task 27 - Iterate array items with for loop</h4>
+            <ul class="mb-0">
+              <li>
+                states = ['Aasam', 'Bihar', 'Maharashtra', 'Gujrat', 'Andra
+                Pradesh'];
+              </li>
+              <li>
+                Use for loop to iterate those state names and print in console
+              </li>
+              <li>
+                It should print in console "Aasam is indian state", "Bihar is
+                indian state" and so on
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var cl = console.log;
+
+      let districts = [
+        "Ahmednagar",
+        "Akola",
+        "Amravati",
+        "Aurangabad",
+        "Bhandara",
+        "Chandrapur",
+        "gondia",
+      ];
+
+      for (let i = 0; i < districts.length; i++) {
+        let district = districts[i];
+        cl(`${district} is districts of Maharashtra`);
+      }
+    </script>
+  </body>
 </html>

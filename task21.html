@@ -1,32 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-	<title>JS Task 21</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="css/style.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap" rel="stylesheet">
-</head>
-<body>
-	<div class="container" id="task21">
-		<div class="row">
-			<div class="col-sm-12">
-				<a href='index.html' class="my-2 d-inline-block"><i class='fa fa-arrow-left mr-2'></i>Task List</a>
-				<div class="card p-3 mb-4">
-					<h4>Task 21 - Open url in new tab</h4>	
-					<ul class="mb-0">
-						<li>On click of button please open yahoo.com in new tab</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12">
-				<button type="button" class="btn btn-primary" id="btn">Open yahoo</button>
-			</div>
-		</div>
-	</div>
-	<script src="js/task21_app.js"></script>
-</body>
+  <head>
+    <title>JS Task 21</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container" id="task21">
+      <div class="row">
+        <div class="col-sm-12">
+          <a href="index.html" class="my-2 d-inline-block"
+            ><i class="fa fa-arrow-left mr-2"></i>Task List</a
+          >
+          <div class="card p-3 mb-4">
+            <h4>Task 21 - Open url in new tab</h4>
+            <ul class="mb-0">
+              <li>On click of button please open yahoo.com in new tab</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <button type="button" class="btn btn-primary" id="btn">
+            Open yahoo
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      let openURLNewTab = (url) => {
+        return window.open(url, "_blank");
+      };
+      console.log(openURLNewTab("https://in.search.yahoo.com/?fr2=inr"));
+    </script>
+  </body>
 </html>

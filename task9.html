@@ -24,6 +24,18 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task9_app.js"></script>
+	<script>
+	
+   
+ 
+		let date1 = new Date();
+		let date2 = new Date("2021-04-16");
+		let timeInMilisec = date2.getTime() - date1.getTime();
+		let daysBetweenDates = Math.ceil(timeInMilisec / (1000 * 60 * 60 * 24));
+		
+
+		alert(`${daysBetweenDates} days Between Dates`)
+			 
+			</script>
 </body>
 </html>
