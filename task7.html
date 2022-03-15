@@ -24,6 +24,18 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task7_app.js"></script>
+	<script>
+		let cl=console.log
+	
+	function weekDays(){
+	let d=new Date();
+	if(d.getDay()=== 5 || d.getDay()==6){
+	return "weekend";
+	}else{
+	return"weekday";
+	}
+	}
+	alert(weekDays());
+	</script>
 </body>
 </html>
