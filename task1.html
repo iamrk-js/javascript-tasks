@@ -31,11 +31,17 @@
 					<div class="form-group mr-sm-3">
 						<input type="text" class="form-control" placeholder="Number" id="inputNum" value="">
 					</div>
-					<button type="button" class="btn btn-primary" id="btn" value="">Check</button>
+					<button type="button" class="btn btn-primary" onclick="oddEvenNum()" id="btn" value="">Check</button>
 				</form>
 			</div>
 		</div>
 	</div>
-	<script src=" js/task1.app.js"></script>
+	<script>
+		function oddEvenNum(){
+	let num = parseInt(document.getElementById("inputNum").value);
+	if(num%2==0){
+	alert('given number is even')}else{alert('given number is odd');
+	}}
+	</script>
 </body>
 </html>

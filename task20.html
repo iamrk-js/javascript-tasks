@@ -23,5 +23,35 @@
 			</div>
 		</div>
 	</div>
+	<script>
+		let arr = [50,33,56,85,89,102,99,100];
+		let highest = 0;
+		function arrayIterate(arr){
+		arr.forEach(function(num){
+			if(num > highest){
+				highest = num;
+			}
+		})
+		return highest;
+	}
+	arrayIterate(arr);
+	console.log(highest);
+
+	let array2 = ['Datta','Gopinath','Tapghale','Shaurya','Maithili','kavita'];
+	let largest='';
+	function findLargestStr(array2){
+		array2.forEach(function(str){
+			if(str.length > largest.length){
+				largest = str;
+			}
+		})
+		return largest;
+
+	}
+	findLargestStr(array2);
+	console.log(largest);
+
+
+	</script>
 </body>
 </html>

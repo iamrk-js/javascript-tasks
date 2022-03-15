@@ -25,11 +25,17 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<form class="form-inline">
-					<button type="button" class="btn btn-primary btn-lg">Show sum</button>
+					<button type="button" class="btn btn-primary btn-lg" onclick="displaySumOfTwoNum()">Show sum</button>
 				</form>
 			</div>
 		</div>
 	</div>
-	<script src="js/task14_app.js"></script>
+	<script>
+		function displaySumofTwoNum(Number1, Number2){
+			let sum = Number1 + Number2;
+			console.log(sum);
+		}
+		displaySumofTwoNum(10,20);
+	</script>
 </body>
 </html>

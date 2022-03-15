@@ -24,6 +24,18 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task27_app.js"></script>
+	<script>
+		let cl = console.log;
+		let result = '';
+		let states = ['Aasam', 'Bihar', 'Maharashtra', 'Gujrat', 'Andra Pradesh'];
+		function arrayIterate(states){
+			for(let i=0; i<states.length; i++){
+				result = `${result} "${states[i]} is Indian State, `
+			}
+			return result;
+		}
+		arrayIterate(states);
+		cl(result);
+	</script>
 </body>
 </html>

@@ -35,11 +35,24 @@
 					<div class="form-group mr-sm-3">
 						<input type="text" class="form-control" placeholder="Value 2" id="numTwo">
 					</div>
-					<button type="button" class="btn btn-primary" id="calciBtn">Calculate</button>
+					<button type="button" class="btn btn-primary" onclick="calculationsOfNums()" id="calciBtn">Calculate</button>
 				</form>
 			</div>
 		</div>
 	</div>
-	<script src="js/app.js"></script>
+	<script>
+		function calculationsOfNums(){
+		let num1 = parseInt(document.getElementById('numOne').value);
+		let num2 = parseInt(document.getElementById('numTwo').value);
+		let sum = num1 + num2;
+		alert(`Addition Of ${num1} and ${num2} is ${sum}`);
+		let sub = num1 - num2;
+		alert(`Subtraction Of ${num1} and ${num2} is ${sub}`);
+		let mul = num1 * num2;
+		alert(`multiplication Of ${num1} and ${num2} is ${mul}`);
+		let div = num1 / num2;
+		alert(`Division Of ${num1} and ${num2} is ${div}`);
+		}
+	</script>
 </body>
 </html>

@@ -22,6 +22,19 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task16_app.js"></script>
+	<script>
+		let arr = [20,25,62,45,48,17,15,19,80,18];
+		let highest = 0;
+		let lowest = 1;
+		function findHighestAndLowestNum(arr){
+			arr.forEach(function(num){
+				if(num > highest){
+					highest = num;
+				}
+			})
+			return highest
+
+		}
+	</script>
 </body>
 </html>

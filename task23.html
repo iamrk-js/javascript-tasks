@@ -24,6 +24,19 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task23_app.js"></script>
+	<script>
+		let cl = console.log;
+		function checkNumber35(num1, num2){
+			if(num1===35 || num2===35){
+				cl(true);
+			}
+			else if((num1 + num2)===35){
+				cl(true);
+			}else{
+				cl(false);
+			}
+		}
+		checkNumber35(10,35);
+	</script>
 </body>
 </html>

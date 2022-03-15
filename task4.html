@@ -40,6 +40,31 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.js"></script>
+	<script>
+		let result;
+		let lowest;
+		let highest;
+		function findHighestOrLowestNum(num1, num2, num3){
+			if(num1>num2 && num1>num3){
+				highest = num1;
+			}
+			else if(num2>num1 && num2>num3){
+				highest = num2;
+			}else{
+				highest = num3;
+			}
+			if(num1<num2 && num1<num3){
+				lowest = num1;
+			}
+			else if(num2<num1 && num2<num3){
+				lowest = num2;
+			}else{
+				lowest = num3;
+			}
+			return result = `highest number : ${highest}  Lowest number: ${lowest} `
+		}
+		findHighestOrLowestNum(100,200,150);
+		console.log(result);
+	</script>
 </body>
 </html>
