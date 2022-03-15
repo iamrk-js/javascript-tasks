@@ -24,6 +24,27 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task30.app.js"></script>
+	<script>
+		let capLetterSorted = str =>
+		{
+			let split = str.split('');
+			let caps = [];
+			let lower = [];
+			split.forEach(letter =>
+			{
+				if(letter == letter.toUpperCase())
+				{
+					caps.push(letter);
+				}
+				if(letter == letter.toLowerCase())
+				{
+					lower.push(letter);
+				}
+			})
+			return caps.join('').concat(lower.join(''));
+		}
+		console.log(capLetterSorted("boTtlE"));
+		console.log(capLetterSorted("poTAtO"));
+	</script>
 </body>
 </html>

@@ -22,6 +22,36 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task16_app.js"></script>
+	<script>
+		let a = [12, 14, 16, 30, 8, 17, 21, 50, 4, 42, 36, 27, 33, 25];
+			// let high = a[0];
+			// let small = a[0];
+			let high = small = a[0];
+
+			// for(let i=0; i<a.length; i++)
+			// {
+			// 	if(a[i] > high)
+			// 	{
+			// 		high = a[i];
+			// 	}
+			// 	if(a[i] < small)
+			// 	{
+			// 		small = a[i];
+			// 	}
+			// }
+			
+			a.forEach(num =>{
+				if(num > high)
+				{
+					high = num;
+				}
+				if(num < small)
+				{
+					small = num;
+				}
+			})
+			alert(`The Highest Number in the array is ${high}`);
+			alert(`The Lowest Number in the array is ${small}`);
+	</script>
 </body>
 </html>

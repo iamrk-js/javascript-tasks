@@ -25,6 +25,30 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task28_app.js"></script>
+	<script>
+		let array = ["Ram","Shyam","Suraj","Akshay","Jitendra"];
+		
+		let array1 = [10,15,23,28,30,35,46,56];
+		
+		// let first = array.shift();
+		// let last = array.pop();
+		// array.push(first);
+		// array.unshift(last);
+		
+		console.log(array);
+		console.log(array1);
+		
+		// const swap = array[array.length-1];
+		// array[array.length-1] = array[0];
+		// array[0] = swap;
+		
+		[array[0], array[array.length-1]] = [array[array.length-1], array[0]];
+		
+		console.log(array);
+		
+		[array1[0], array1[array1.length-1]] = [array1[array1.length-1], array1[0]];
+		
+		console.log(array1);
+	</script>
 </body>
 </html>

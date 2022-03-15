@@ -1,20 +1,23 @@
 <!doctype html>
 <html>
+
 <head>
 	<title>JS Task 20</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="css/style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
 	<div class="container" id="task20">
 		<div class="row">
 			<div class="col-sm-12">
 				<a href='index.html' class="my-2 d-inline-block"><i class='fa fa-arrow-left mr-2'></i>Task List</a>
 				<div class="card p-3 mb-4">
-					<h4>Task 20 - Call function in another function</h4>	
+					<h4>Task 20 - Call function in another function</h4>
 					<ul class="mb-0">
 						<li>Create one function</li>
 						<li>Call that function in another function</li>
@@ -23,5 +26,87 @@
 			</div>
 		</div>
 	</div>
+	<script>
+		let avenger =
+			{
+				fname: "Tony",
+				lname: "Stark",
+				fullname: function () {
+					return this.fname + " " + this.lname;
+				},
+				wife:
+				{
+					fname: "Pepper",
+					lname: "Potts",
+					fullname: function () {
+						return this.fname + " " + avenger.fname + " " + avenger.lname;
+					},
+					husbandname: function () {
+						return avenger.fname + " " + avenger.lname;
+					}
+				},
+				child:
+				{
+					fname: "Morgan",
+					lname: "Stark",
+					fullname: function () {
+						return this.fname + " " + avenger.fname + " " + avenger.lname;
+					},
+					fathername: function () {
+						return avenger.fname + " " + avenger.lname;
+					},
+					mothername: function () {
+						return avenger.wife.fname + " " + avenger.wife.lname;
+					},
+					childs_Son1:
+					{
+						fname: "Howord",
+						lname: "Stark",
+						fullname: function () {
+							return this.fname + " " + avenger.child.fname + " " + this.lname;
+						},
+						mothername: function () {
+							return avenger.child.fname + " " + avenger.child.lname;
+						},
+						grandmother: function () {
+							return avenger.wife.fname + " " + avenger.wife.lname;
+						},
+						grandfather: function () {
+							return avenger.fname + " " + avenger.lname;
+						}
+					}
+				}
+			}
+			let getFullname = avenger.fullname();
+			console.log(getFullname);
+
+			let getWifeFullname = avenger.wife.fullname();
+			console.log(getWifeFullname);
+
+			let getHusbandName = avenger.wife.husbandname();
+			console.log(getHusbandName);
+
+			let getChildFullname = avenger.child.fullname();
+			console.log(getChildFullname);
+
+			let getFatherName = avenger.child.fathername();
+			console.log(getFatherName);
+
+			let getMotherName = avenger.child.mothername();
+			console.log(getMotherName);
+
+			let getChildSonFullname = avenger.child.childs_Son1.fullname();
+			console.log(getChildSonFullname);
+
+			let getMyMothername = avenger.child.childs_Son1.mothername();
+			console.log(getMyMothername);
+
+			let getGrandmother = avenger.child.childs_Son1.grandmother();
+			console.log(getGrandmother);
+
+			let getGrandfather = avenger.child.childs_Son1.grandfather();
+			console.log(getGrandfather);
+	</script>
 </body>
+
 </html>

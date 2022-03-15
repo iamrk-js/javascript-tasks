@@ -22,6 +22,25 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task29_app.js"></script>
+	<script>
+		let arrStr = ["Ram","Shyam","Suraj","Jitendra"];
+		let skills = ['HTML5', 'CSS3', 'SCSS', 'Bootstrap3-4', 'javaScript', 'TypeScript', 'Angular'];
+		
+		let longestStr = arr =>
+		{
+			let result ='';
+			let count = 0;
+			arr.forEach(i =>{
+				if(i.length > count)
+				{
+					count = i.length;
+					res = i;
+				}
+			})
+				return res
+		}
+		console.log(longestStr(arrStr));
+		console.log(longestStr(skills));
+	</script>
 </body>
 </html>

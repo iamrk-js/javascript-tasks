@@ -49,6 +49,22 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task12_app.js"></script>
+	<script>
+		let convertMinsToSecs = min => {
+				return Math.floor(min * 60);
+			}
+			console.log(`Conversion of Minutes into Seconds = ${convertMinsToSecs(2)}`);
+
+			let convertHrsToMins = hrs => {
+				return Math.floor(hrs * 60);
+			}
+			console.log(`Conversion of Hours into Minutes = ${convertHrsToMins(5)}`);
+
+			let convertSecsToMins = sec => {
+				return Math.floor(sec / 60);
+			}
+			console.log(`Conversion of Seconds into Minutes = ${convertSecsToMins(70)}`);
+			
+	</script>
 </body>
 </html>

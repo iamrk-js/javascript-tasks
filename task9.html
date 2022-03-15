@@ -24,6 +24,14 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task9_app.js"></script>
+	<script>
+		let firstDate = new Date(1995, 09, 31);
+		let secondDate = new Date(1993, 09, 31);
+		let diffDay = firstDate.getDate() - secondDate.getDate();
+		let diffMonth = (firstDate.getMonth() - secondDate.getMonth()) * 30;
+		let diffYear = (firstDate.getYear() - secondDate.getYear()) * 365;
+		let totalDays = diffDay + diffMonth + diffYear;
+		alert(`Total Days between given dates are - ${totalDays}`);
+	</script>
 </body>
 </html>

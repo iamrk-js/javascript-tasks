@@ -14,7 +14,7 @@
 			<div class="col-sm-12">
 				<a href='index.html' class="my-2 d-inline-block"><i class='fa fa-arrow-left mr-2'></i>Task List</a>
 				<div class="card p-3 mb-4">
-					<h4>Task 26 - Cut the first character, put it at the end and print the string</h4>	
+					<h4>Task 26 - Copy the first character, put it at the end and print the string</h4>	
 					<ul class="mb-0">
 						<li>If user types technology in the text box and click on the button then print in the console "technologyt"</li>
 					</ul>
@@ -32,6 +32,16 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task26_app.js"></script>
+	<script>
+		let strEdit = str =>{
+			let arr = str.split('');
+			let firstChar = arr[0];
+			let result = arr.concat(firstChar);
+			let finalString = result.join('');
+			return finalString;
+		}
+		console.log(strEdit("technology"));
+		console.log(strEdit("HTML"));
+	</script>
 </body>
 </html>

@@ -34,6 +34,19 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task8_app.js"></script>
+	<script>
+		let capString = str =>
+			{
+				let arr = str.split(' ');
+				for(let i=0; i < arr.length; i++)
+				{
+					let b = arr[i].charAt(0).toUpperCase();
+					arr[i] = b + arr[i].slice(1);
+				}
+				return arr.join(' ');
+			}
+			console.log(capString('i love javascript'));
+			console.log(capString('i love javascript bcuz, it is light weight, object oriented, interpreted programing language which is used to create dynamic web pages'));
+	</script>
 </body>
 </html>
