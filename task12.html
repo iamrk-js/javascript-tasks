@@ -49,6 +49,27 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task12_app.js"></script>
+	<script>
+		let cl=console.log;
+let convertminutetosecond=min=>{
+	return Math.floor(min*60);
+}
+cl(convertminutetosecond(3));
+
+
+
+
+let converthourstominute=hour=>{
+return Math.floor(hour*60);	
+}
+cl(converthourstominute(2));
+
+
+
+let convermintohour=hour=>{
+	return Math.ceil(hour/60);
+}
+cl(convermintohour(180));
+	</script>
 </body>
 </html>

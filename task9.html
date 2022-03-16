@@ -24,6 +24,17 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task9_app.js"></script>
+	<script>
+		let cl=console.log;
+			let d1=new Date("09/01/2020");
+				cl(d1);
+	let d2=new Date("07/30/2019");
+cl(d2);
+let diff=d1.getTime()-d2.getTime();
+cl(diff);
+let daysbetweemtwodate = Math.floor(diff / (1000*60*60*24));
+alert (`${daysbetweemtwodate}`)
+
+	</script>
 </body>
 </html>

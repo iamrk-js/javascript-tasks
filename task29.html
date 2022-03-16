@@ -22,6 +22,24 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task29_app.js"></script>
+	<script>
+		
+		let cl=console.log;
+let arrstr=["Ram","Shyam","Suraj","Jitendra"];
+
+let longeststring = arr=>{
+	let result='';
+	let count=0;
+	arr.forEach(i=>{
+		if(i.length > count){
+			count=i.length;
+			result=i;
+		}
+	})
+	return result
+}
+cl(longeststring(arrstr));
+
+	</script>
 </body>
 </html>
