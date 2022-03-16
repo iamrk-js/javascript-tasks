@@ -24,6 +24,16 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task7_app.js"></script>
+	<script>
+		let D = new Date();
+		let W = D.getDay();
+		console.log(W);
+		
+		if(W===0 || W===6){
+			alert('Day war weekend..!!');
+		}else{
+			alert('Day was weekday..!!');
+		}
+	</script>
 </body>
 </html>
