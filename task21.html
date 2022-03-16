@@ -28,11 +28,23 @@
 		</div>
 	</div>
 	<script>
-		let openURLNewTab = url =>
-		{
-			return window.open(url,'_blank');
+		let myLink = "https://in.search.yahoo.com/?fr2=inr";
+		let btn = document.getElementById("btn");
+
+		let openURLNewTab = url =>{
+			let result = '';
+			result = "<a href='"+url+"' target = '_blank' class ='text-white text-decoration-none'>"+'Open yahoo'+"</a>";
+			btn.innerHTML=result;
+			return result;
 		}
-		console.log(openURLNewTab("https://in.search.yahoo.com/?fr2=inr"));
+		console.log(openURLNewTab(myLink));
+		
+		
+		// let openURLNewTab = url =>
+		// {
+		// 	return window.open(url,'_blank');
+		// }
+		// console.log(openURLNewTab("https://in.search.yahoo.com/?fr2=inr"));
 	</script>
 </body>
 </html>
