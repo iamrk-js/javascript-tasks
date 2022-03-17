@@ -40,6 +40,29 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.js"></script>
+	<script>
+
+function highest(x,y,z){
+		if(x>y && x>z){
+			return `Highest number is ${x}`;
+		}else if(y>z && y>x){
+			return `Highest number is ${y}`;
+		}else if(z>x && z>y){
+			return `Highest number is ${z}`;
+		}
+	}
+	console.log(highest(29,0,12))
+	
+	function lowest(a,b,c){
+		if(a<b && a<c){
+			return `Lowest number is ${a}`;
+		}else if(b<c && b<a){
+			return `Lowest number is ${b}`;
+		}else if(c<a && c<b){
+			return `Lowest number is ${c}`;
+		}
+	}
+	console.log(lowest(2,-5,90))
+	</script>
 </body>
 </html>

@@ -24,6 +24,20 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task9_app.js"></script>
+	<script>
+let cl=console.log
+	
+	let date1=new Date(2022,2,01,22,52,20);
+	let date2=new Date(2022,2,08,22,52,20);
+	
+	cl(date1);
+	cl(date2);
+	
+	let timeDiff=date2.getTime()-date1.getTime();
+	cl(timeDiff);
+	alert(timeDiff / (1000*60*60*24));
+
+
+	</script>
 </body>
 </html>

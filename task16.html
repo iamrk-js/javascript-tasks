@@ -22,6 +22,22 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task16_app.js"></script>
+	<script>
+	let numbers=[90,34,22,-45,0,277]
+	let highest=numbers[0];
+	let lowest=numbers[0];
+	
+	for(let i=0;i<numbers.length;i++){
+		if(numbers[i] > highest){
+			highest=numbers[i]
+		}else if(numbers[i] < lowest){
+			lowest=numbers[i]
+		}
+	}
+		alert(highest);
+		alert(lowest);
+
+
+	</script>
 </body>
 </html>
