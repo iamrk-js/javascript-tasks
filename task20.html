@@ -24,4 +24,42 @@
 		</div>
 	</div>
 </body>
+<script>
+	var person =
+	{
+		
+		fname : "varsha",
+		lname : "patil",
+		country: "india",
+		age : 25,
+		fullname : function()
+		{
+			return this.fname +" "+ this.lname;
+		},
+		child : 
+		{
+			fname : "abc",
+			lname : "patil",
+			country: "india",
+			fullname : function()
+				{
+					return this.fname +" "+ this.lname;
+				},
+				grandchild :  
+				{
+					fname : "xyz",
+					lname : "patil",
+					country: "india",
+					fullname : function()
+					{
+						return this.fname+" "+this.lname;
+					}
+				}
+		}		
+	}
+	
+	console.log(person.fullname());
+	console.log(person.child.fullname());
+	console.log(person.child.grandchild.fullname());
+	</script>
 </html>

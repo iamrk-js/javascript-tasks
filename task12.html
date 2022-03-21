@@ -50,5 +50,30 @@
 		</div>
 	</div>
 	<script src="js/task12_app.js"></script>
+	<script>
+		
+		//Convert minutes to seconds
+		function convertMinutestoeconds(minutes){
+			return  minutes * 60
+		}
+		var seconds = convertMinutestoeconds(2)
+		console.log(seconds)
+		
+		//Convert hours to minutes
+		
+		function convertHourstoMinute(hours){
+			return  hours * 60
+		}
+		var minutes = convertHourstoMinute(1)
+		console.log(minutes)
+		
+		//Convert seconds to minutes
+		
+		function convertSecondtoMinute(seconds){
+			return seconds / 60
+		}
+		var minutes = convertSecondtoMinute(120)
+		console.log(minutes)
+	</script>
 </body>
 </html>

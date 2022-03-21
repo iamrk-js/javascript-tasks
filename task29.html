@@ -23,5 +23,25 @@
 		</div>
 	</div>
 	<script src="js/task29_app.js"></script>
+	<script>
+		let str = ["abhi","rutweek","shreekant","rakesh","adi"];
+		let skill = ["html","css","sass","javascript","typeScript","angular","html5","css4&5"];
+		
+		let skills = arr =>{
+			let result = '';
+			let count = 0
+			
+			arr.forEach(i => {
+				if(i.length > count){
+				count = i.length;
+				result = i;
+				}
+				
+			})
+			return result
+		}
+		console.log(skills(str));
+		console.log(skills(skill));
+	</script>
 </body>
 </html>

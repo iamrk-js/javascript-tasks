@@ -25,5 +25,17 @@
 		</div>
 	</div>
 	<script src="js/task9_app.js"></script>
+	<script>
+		let date1 = new Date("06/30/2019");
+		console.log(date1)
+		let date2 = new Date("07/30/2019");
+		console.log(date2)
+		let diffInTime = date2.getTime() - date1.getTime();
+		console.log(diffInTime)
+		let dffInDays = diffInTime / (1000 * 3600 * 24);
+		console.log(dffInDays)
+		alert(`${dffInDays} days between Date `)
+		
+	</script>
 </body>
 </html>

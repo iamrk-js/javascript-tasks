@@ -23,5 +23,29 @@
 		</div>
 	</div>
 	<script src="js/task16_app.js"></script>
+	<script>
+		
+
+		
+		
+		
+		
+		let array =[-3,-2,-1,1,0,1,2,3,4,5,6,7,8,9];
+		
+		let highNo = smallNo = array[0];
+		
+		for(let i = 0; i < array.length; i++){
+			if(array[i] >highNo){
+				highNo = array[i];
+			}
+			else if(array[i] > smallNo){
+				smallNo = array[i]
+			}
+			
+		}
+		alert(`the highest Number in the array is ${highNo}`)
+		alert(`the Lowest Number in the array is ${smallNo}`)
+	
+	</script>
 </body>
 </html>

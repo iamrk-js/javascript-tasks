@@ -25,5 +25,24 @@
 		</div>
 	</div>
 	<script src="js/task30.app.js"></script>
+	<script>
+		let str = "TEbotl";
+		let moveCapitalToFront = (str = '')=>{
+			let capitalIndex = 0;
+			
+			let newstrArr = [];
+			
+			for(let i = 0; i < str.length; i++){
+				if(str[i] !== str[i].toLowerCase()){
+				newstrArr.splice(capitalIndex, 0, str[i]);
+				capitalIndex++;
+				}else{
+					newstrArr.push(str[i]);
+				};
+			};
+			return newstrArr.join('');
+		};
+		console.log(moveCapitalToFront(str));
+	</script>
 </body>
 </html>

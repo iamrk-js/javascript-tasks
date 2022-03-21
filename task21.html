@@ -28,5 +28,22 @@
 		</div>
 	</div>
 	<script src="js/task21_app.js"></script>
+	<script>
+		let cl = console.log;		
+		let yahoolink = "https://in.search.yahoo.com/?fr2=inris"			
+		let	btn = document.getElementById('btn');		
+		function link (mylink){			
+			let result = '';			
+					result += "<a href ='"+mylink+"' target = '_blank' class='text-white text-decoration-none'> "+'Open yahoo'+"</a>"				
+			btn.innerHTML = result
+			return result
+		}		
+		cl(link(yahoolink))
+		
+		
+		
+		
+	
+	</script>
 </body>
 </html>

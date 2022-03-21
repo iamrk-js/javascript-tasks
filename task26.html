@@ -33,5 +33,18 @@
 		</div>
 	</div>
 	<script src="js/task26_app.js"></script>
+	<script>
+		let character = str =>{
+			let arr = str.split('')
+			let first = arr[0];
+			let result = arr.concat(first)
+			let  last = result.join('')
+			return last;
+		}
+		
+		console.log (character("indian"));
+		console.log (character("hindustan"));
+	</script>
+</body>
 </body>
 </html>
