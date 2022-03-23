@@ -24,6 +24,20 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task9_app.js"></script>
+	<script>
+	let cl = console.log;
+		let date1 = new Date('1/30/2022');
+		let date2 = new Date('2/30/2022');
+		function calDaysBetDates(dateone, datetwo) {
+		  let oneDay = 24 * 60 * 60 * 1000;
+		  let date1InMillis = dateone.getTime();
+		  let date2InMillis = datetwo.getTime();
+		  let diff = Math.abs(date2InMillis - date1InMillis);
+		  let days = Math.ceil(diff / oneDay);
+		  return days;
+		}
+		
+		console.log(calDaysBetDates(date1,date2));
+		</script>
 </body>
 </html>
