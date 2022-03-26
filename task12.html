@@ -49,6 +49,27 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task12_app.js"></script>
+	<script>
+		let cl=console.log;
+
+
+
+
+function MinTOsec(min){
+  return ( `${min * 60} second` )
+}
+cl(MinTOsec(2));
+
+
+function hrsToMin(hrs){
+    return(`${hrs * 60} Minute`)
+}
+cl(hrsToMin(1));
+
+function secToMin(sec){
+    return(`${sec / 60}Minute`)
+}
+cl(secToMin(3600));
+	</script>
 </body>
 </html>
